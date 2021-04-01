@@ -53,14 +53,22 @@ async function deleteItem(id: number): Promise<void> {
       throw new Error(response.statusText);
     }
     const resource = await response.json();
+    /* As it was not rerendering the updated list once after the deletion. 
+    I have used plain JavaScript document getElement to remove the deleted element. 
+    This is obviously not an ideal way as it may affect the virtual DOM in React and might raise an exception.
+    I am new to this Prisma and would like to learn more about it and get experience on the same. */
     const node = document.getElementById(id);
+    // To check if it is not null
     if(node){
       console.log(node)
       node.remove();
     }
     // return { props: { ...resource } };
     return await resource;
-  } else {}
+  } 
+  else {
+    console.log("Nothing")
+  }
   
 };
 
