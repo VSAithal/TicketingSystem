@@ -1,24 +1,3 @@
-# Zenjob Coding Challenge
-
-This is a **coding challenge** intended for **frontend engineers**. It holds **three different tasks**. For finishing Tasks A and B with some brief documentation, you should not need to invest more than **2 hours** depending on your familiarity with the tech stack and your skills. 
-
-## What this is about
-
-This repository consists of a simplified version of a **ticketing system** like it could be used by Zenjob to handle customer requests. We would like you to extend the functionality of it and ensure it can be used across devices.
-
-### No bootstrapping needed
-
-To allow you to dive right into it, there is a simplified version which already contains the following features:
-
-- an endpoint to list all **people**
-- an endpoint to list all **tickets**
-- an endpoint to delete **tickets**
-- a UI to list all **tickets**
-
-Feel free to adjust the exiting code as much as you like.
-
-For your convenience the repo contains additionally to the UI also the API as well as a local DB. You can play with it as much as you like and re-seed the app whenever needed. To get started just follow the steps in the next section.
-
 ### Getting started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
